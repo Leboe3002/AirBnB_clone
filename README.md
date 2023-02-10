@@ -1,3 +1,4 @@
+![156969348-4eb599dd-b1b1-4a64-a04a-e5a9f4e183da](https://user-images.githubusercontent.com/111272416/218190116-dd0ade02-173c-4069-b27b-fce536986ace.png)
 rBnB](assets/hbnb_logo.png)
 
 ## DESCRIPTION

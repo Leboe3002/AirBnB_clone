@@ -2,7 +2,7 @@
 """
 A module that implements the BaseModel class
 """
-
+import models
 from uuid import uuid4
 from datetime import datetime
 
@@ -17,11 +17,11 @@ class BaseModel:
         Initialize the BaseModel class
         """
 
-        from models import storage
+        
         if not kwargs:
             self.id = str(uuid4())
             self.created_at = self.updated_at = datetime.now()
-            storage.new(self)
+            models.new(self)
         else:
             for key, value in kwargs.items():
                 if key != '__class__':
@@ -44,7 +44,7 @@ class BaseModel:
         """
         from models import storage
         self.updated_at = datetime.now()
-        storage.save()
+        models.storage.save()
 
     def to_dict(self):
         """
